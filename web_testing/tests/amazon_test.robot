@@ -25,3 +25,12 @@ Case Test 02 - Search for a Product
     In the search field, search for the product "${PRODUCT}"
     Click on the search button
     The search results page should display the product "${PRODUCT}" in the results.
+
+Case Test 03 - Add a produtc in the cart
+    [Documentation]    Check if is possible to add product
+    [Tags]             cart
+    Visit the home page of Amazon.com.br
+    In the search field, search for the product "${PRODUCT}"
+    Click on the search button
+    The search results page should display the product "${PRODUCT}" and add to cart
+    Check If "${PRODUCT}" was added to the cart

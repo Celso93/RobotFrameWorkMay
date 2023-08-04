@@ -40,5 +40,18 @@ Click on the search button
     Click Button    locator=css:#nav-search-submit-button
 
 The search results page should display the product "${RESULT}" in the results.
-    Wait Until Page Contains    text=Resultados
-    Wait Until Page Contains    text=${RESULT} 
+    Wait Until Page Contains    text=Resultados    timeout=10
+    Wait Until Page Contains    text=${RESULT}
+
+The search results page should display the product "${PRODUCT}" and add to cart
+    The search results page should display the product "${PRODUCT}" in the results.
+    Click Element                    xpath=//*[text()='${PRODUCT}'][1]
+
+    Wait Until Element Is Visible    locator=css:.a-box-group
+    Click Element                    locator=css:#add-to-cart-button
+    Wait Until Page Contains         text=Adicionado ao carrinho
+
+Check If "${PRODUCT}" was added to the cart
+    Click Element                    locator=css:#nav-cart-text-container
+    Title Should Be                  title=Carrinho de compras da Amazon.com
+    Wait Until Page Contains         text=${PRODUCT}
