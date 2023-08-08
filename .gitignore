@@ -1,3 +1,7 @@
 /ServeRest/
 /api_test/results
 /web_testing/results
+log.html
+*.xml
+report.html
+*.png

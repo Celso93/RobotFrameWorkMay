@@ -41,3 +41,4 @@ For more information, check the following resources:
 - REST API Introduction: [Informacoes sobre API REST](https://becode.com.br/o-que-e-api-rest-e-restful/)
 - Testing Web Services with Postman: [Testtando com postman](https://medium.com/@thi_carva/testando-servi%C3%A7os-web-api-com-postman-874ac81b20a3)
 - ServeRest GitHub Repository: [ServeRest Github](https://github.com/ServeRest/ServeRest)
+- [May Blog](http://robotizandotestes.blogspot.com/)
