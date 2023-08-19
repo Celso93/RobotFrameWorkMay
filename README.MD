@@ -1,7 +1,42 @@
 # Introduction
 This document covers the basics of the Robot Framework.
 
-## Installation
+## Installation Virtual env
+A virtual environment is an isolated environment where you can install packages without affecting system-wide package installations. This is extremely useful to avoid conflicts between package versions between different projects.
+
+- Install virtualenv:
+```
+pip install virtualenv
+```
+
+- Create a virtual environments:
+```
+virtualenv venv
+```
+
+- Activing:
+On linux/mac (This will be in the root of your project):
+```
+source env/bin/activate
+```
+
+- Intall Dependecies:
+```
+pip install -r requirements.txt
+```
+
+-- If you need to freeze some new version library
+```
+pip freeze > requirements.txt
+```
+
+- Desactive
+```
+deactivate
+```
+
+
+## Installation Local
 
 Windows: Visit the Python's official site [here](https://www.python.org/)
 
